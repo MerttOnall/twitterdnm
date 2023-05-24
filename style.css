@@ -1,0 +1,12 @@
+.menu-bar>li{
+    margin-top: 1.5rem;
+}
+#ara{
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: .75rem;
+    outline: none;
+}
+#ara:focus{
+    border: blue 1px solid;
+}
