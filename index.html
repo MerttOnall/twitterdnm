@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,43 +19,303 @@
       
       <div class="row">
         <div class="col-3">
-          <ul class="list-unstyled menu-bar">
-            <body>
-              <img src="twitter.svg"  alt="" width="75" height="30" >
-          </body>
-            <li>Home</li>
-            <li>Explore</li>
-            <li>Notifications</li>
-            <li>Messages</li>
-            <li>Lists</li>
-            <li>Bookmarks</li>
-            <li>Twitter Blue</li>
-            <li>Profile</li>
-            <li>More</li>
+          <ul class="list-unstyled menu-bar fs-4 position-fixed">
             
-            <a href="#" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Tweet</a>
+            <li><i class="fa-brands fa-twitter" style="color: #17a2b5; "></i></li>
+            
+            <li><i class="fa-sharp fa-solid fa-house me-4"></i>Home</li>
+            <li><i class="fa-regular fa-hashtag me-3" style="color: #000000;"></i>Explore</li>
+            <li><i class="fa-regular fa-bell me-3" style="color: #000000;"></i>Notifications</li>
+            <li><i class="fa-regular fa-envelope me-3" style="color: #000000;"></i>Messages</li>
+            <li><i class="fa-regular fa-clipboard me-3"></i>Lists</li>
+            <li><i class="fa-regular fa-bookmark me-3"></i>Bookmarks</li>
+            <li><i class="fa-regular fa-newspaper me-3"></i>Twitter Blue</li>
+            <li><i class="fa-regular fa-user me-3"></i>Profile</li>
+            <li><i class="fa-regular fa-comment-dots me-3"></i>More</li>
+            
+            <button type="button" class="btn btn-primary btn-lg mt-4 btn-twet">Tweet</button>
+
+            <div class="list-group-item d-flex justify-content-between align-items-start profile">
+              <img src="https://picsum.photos/seed/picsum/200/300" 
+              class="mb-1 ml-3" style="width: 50px; height: 50px; border-radius: 50%"/>
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Mert Önal</div>
+                @mertonl
+              </div>
+              <span class="badge bg-primary rounded-pill"></span>
+            </div>
           </ul>
         </div>
         <div class="col-6 border-start border-end">
           <div class="row">
             <h3 class="mt-2">Home</h3>
-            <ul class="d-flex justify-content-around mt-4 list-unstyled border-bottom">
-              <li class="border-bottom border-info border-5">Sana özel</li>
-              <li>Takip edilenler</li>
+            <ul
+              class="d-flex justify-content-around mt-1 list-unstyled links"
+            >
+              <li><a href="index.html">Sana Özel</a></li>
+              <li><a href="index2.html">Takip Edilenler</a></li>
             </ul>
             
           </div>
-          <a class="twitter-timeline" href="https://twitter.com/TwitterDev/lists/national-parks?ref_src=twsrc%5Etfw">A Twitter List by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="row border-bottom">
+            <div class="d-flex position-relative neler-oluyor">
+              <img
+                class="blog-img position-absolute"
+                src="https://picsum.photos/seed/picsum/200/300"
+                alt="foto"
+              />
+              <input
+                class="d-inline-block"
+                type="search"
+                name=""
+                id="neler-oluyor-input"
+                placeholder="Neler oluyor?"
+              />
+            </div>
+            <div class="d-flex neler-oluyor-icons">
+              <i class="fa-regular fa-image"></i>
+              <i class="fa-solid fa-table-cells-large"></i>
+              <i class="fa-solid fa-gift"></i>
+              <i class="fa-regular fa-face-smile"></i>
+              <i class="fa-regular fa-calendar"></i>
+              <i class="fa-solid fa-location-dot"></i>
+              <button>Tweetle</button>
+            </div>
+          </div>
+          <div class="row text-center pt-3 goster border-bottom">
+            <p>Göster 25 Tweet</p>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header" style="background-color: white;">
+              <img src="https://picsum.photos/200/300"
+                class="mr-2"style="width: 50px; height: 50px; border-radius: 50%"/>
+              <span class="postuserfont"><strong><a href="https://www.instagram.com/mertt.onal" target="_blank" style="color: black;">Mert Önal </a></strong>@mertonl . 10h</span>
+              <p class="float-right ms-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              </p>
+            </div>
+            <img
+              src="https://picsum.photos/200"
+              class="card-img-top" alt="..."/>
+            <ul class="list-group list-group-horizontal border-0 d-flex justify-content-around" style="list-style-type: none;">
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">
+                  <i class="fa-regular fa-comment"></i>
+                <span>
+                  1700
+                </span>
+                </a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-recycle"></i>
+                    <span>
+                      1700
+                    </span>
+                  </a>
+              </li>
+              <li class="nav-item ms-3">
+                <i class="fa-regular fa-heart"></i></a>
+                <span>
+                  1700
+                </span>
+              </li>
+              
+                <li class="nav-item ml-4  ms-3">
+                  <a class="nav-link ml-2" href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>
+                      1700
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </li>
+              
+            </ul>
+            <span>
+              
+              
+            <div
+              class="card-footer bg-white"
+              style="color: rgb(139, 133, 133); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans','Helvetica Neue', sans-serif;
+                font-size: 14px;">
+              <span style="margin-left: -4px"></span>
+              <img src="https://picsum.photos/200/300"
+                class="mb-1 ml-3" style="width: 30px; height: 30px; border-radius: 50%"/>
+              <span class="" style="color: #0095f6; opacity: 50%">
+                <strong>Show this tread</strong>
+              </span>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header" style="background-color: white;">
+              <img src="https://picsum.photos/200"
+                class="mr-2"style="width: 50px; height: 50px; border-radius: 50%"/>
+              <span class="postuserfont"><strong><a href="https://www.instagram.com/mertt.onal" target="_blank" style="color: black;">Enes Küçük </a></strong>@enskck . 8h</span>
+              <p class="float-right ms-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              </p>
+            </div>
+            <img
+              src="https://picsum.photos/200/300/?blur"
+              class="card-img-top" alt="..."/>
+            <ul class="list-group list-group-horizontal border-0 d-flex justify-content-around" style="list-style-type: none;">
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">
+                  <i class="fa-regular fa-comment"></i>
+                <span>
+                  1700
+                </span>
+                </a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-recycle"></i>
+                    <span>
+                      1700
+                    </span>
+                  </a>
+              </li>
+              <li class="nav-item ms-3">
+                <i class="fa-regular fa-heart"></i></a>
+                <span>
+                  1700
+                </span>
+              </li>
+              
+                <li class="nav-item ml-4  ms-3">
+                  <a class="nav-link ml-2" href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>
+                      1700
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </li>
+              
+            </ul>
+            <span>
+              
+              
+            <div
+              class="card-footer bg-white"
+              style="color: rgb(139, 133, 133); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans','Helvetica Neue', sans-serif;
+                font-size: 14px;">
+              <span style="margin-left: -4px"></span>
+              <img src="https://picsum.photos/200"
+                class="mb-1 ml-3" style="width: 30px; height: 30px; border-radius: 50%"/>
+              <span class="" style="color: #0095f6; opacity: 50%">
+                <strong>Show this tread</strong>
+              </span>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-header" style="background-color: white;">
+              <img src="https://picsum.photos/200"
+                class="mr-2"style="width: 50px; height: 50px; border-radius: 50%"/>
+              <span class="postuserfont"><strong><a href="https://www.instagram.com/mertt.onal" target="_blank" style="color: black;">Salih Karahan </a></strong>@slhkrhn . 7h</span>
+              <p class="float-right ms-4">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              </p>
+            </div>
+            <img
+              src="https://picsum.photos/200"
+              class="card-img-top" alt="..."/>
+            <ul class="list-group list-group-horizontal border-0 d-flex justify-content-around" style="list-style-type: none;">
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">
+                  <i class="fa-regular fa-comment"></i>
+                <span>
+                  1700
+                </span>
+                </a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-recycle"></i>
+                    <span>
+                      1700
+                    </span>
+                  </a>
+              </li>
+              <li class="nav-item ms-3">
+                <i class="fa-regular fa-heart"></i></a>
+                <span>
+                  1700
+                </span>
+              </li>
+              
+                <li class="nav-item ml-4  ms-3">
+                  <a class="nav-link ml-2" href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>
+                      1700
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </li>
+              
+            </ul>
+            <span>
+              
+              
+            <div
+              class="card-footer bg-white"
+              style="color: rgb(139, 133, 133); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans','Helvetica Neue', sans-serif;
+                font-size: 14px;">
+              <span style="margin-left: -4px"></span>
+              <img src="https://picsum.photos/id/62/200/300"
+                class="mb-1 ml-3" style="width: 30px; height: 30px; border-radius: 50%"/>
+              <span class="" style="color: #0095f6; opacity: 50%">
+                <strong>Show this tread</strong>
+              </span>
+            </div>
+          </div>
         </div>
             
         
         <div class="col-3">
-          <div class="row ms-1 mt-1">
-            <input type="search" name="" id="ara" placeholder="Twitter'da Ara">
+          <div class="row ms-1 mt-1 ">
+            <div class="search-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="" id="ara" placeholder="Search Twitter">
+            </div>
             
-            <li>Trends For You</li>
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            
+            <div class="list-group mt-3">
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Trends For You</h5>
+                  <small>...</small>
+                </div>
+                <p class="mb-1"></p>
+                <small></small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Politics. Trending</h5>
+                  <small class="text-body-secondary"></small>
+                </div>
+                <p class="mb-1">#OğuzhanUğur</p>
+                <small class="text-body-secondary">32.3k Tweets</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Politics. Trending</h5>
+                  <small class="text-body-secondary">...</small>
+                </div>
+                <p class="mb-1">#Oyver</p>
+                <small class="text-body-secondary">23.7k Tweets</small>
+              </a>
+            </div>
+            <div class="list-group ">
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                 <div class="d-flex w-100 justify-content-between">
                   <h5 class="mb-1">Politics. Trending</h5>
                   <small>...</small>
@@ -78,6 +340,81 @@
                 <small class="text-body-secondary">23.7k Tweets</small>
               </a>
             </div>
+            <div class="list-group ">
+              <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Politics. Trending</h5>
+                  <small>...</small>
+                </div>
+                <p class="mb-1">#babalatv</p>
+                <small>43.7k Tweets</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Politics. Trending</h5>
+                  <small class="text-body-secondary">...</small>
+                </div>
+                <p class="mb-1">#OğuzhanUğur</p>
+                <small class="text-body-secondary">32.3k Tweets</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"></h5>
+                  <small class="text-body-secondary">...</small>
+                </div>
+                <p class="mb-1">Show more</p>
+                <small class="text-body-secondary"></small>
+              </a>
+            </div>
+            <ol class="list-group list-group-numbered mt-4 mrt">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="https://picsum.photos/id/62/200/300"
+                class="mb-1 ml-3" style="width: 30px; height: 30px; border-radius: 50%"/>
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Mert Önal</div>
+                  @mertonl
+                </div>
+                <span class="badge bg-primary rounded-pill">Follow</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="https://picsum.photos/200"
+                class="mb-1 ml-3" style="width: 30px; height: 30px; border-radius: 50%"/>
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Ahmet Karadeniz</div>
+                  @ahmtkrdnz
+                </div>
+                <span class="badge bg-primary rounded-pill">Follow</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <img src="https://picsum.photos/200/300"
+                class="mb-1 ml-3" style="width: 30px; height: 30px; border-radius: 50%"/>
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Mehmet Kalkan</div>
+                  @mehmetklkn
+                </div>
+                <span class="badge bg-primary rounded-pill">Follow</span>
+              </li>
+              <div>Terms of Service
+                Privacy Policy
+                Cookie Policy
+                Imprint
+                Accessibility
+                Ads info
+                More
+                © 2023 X Corp.</div>
+
+                <div class="position-fixed Messages">
+                  <div class="ms-2 mt-2">
+                    <div class="fw-bold d-flex fs-5">
+                      <p>Messages</p>
+                      <div class="ms-auto me-2">
+                        <i class="fa-solid fa-envelope-circle-check me-3"></i>
+                        <i class="fa-solid fa-angles-up"></i>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </ol>
           </div>
         </div>
       </div>
@@ -98,5 +435,6 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    
   </body>
 </html>
